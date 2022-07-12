@@ -1,0 +1,86 @@
+body{
+    background-color: #000010;
+}
+.box{
+    padding: 1%;
+    border: 5%;
+    width: 80%;
+    margin: 5%;
+    background-color: rgb(26, 25, 25);
+    text-align: justify;
+}
+.bar{
+    float: left;
+    color:#055203;
+}
+.nav{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: #000000;
+    height: 30px;
+}
+.bar a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-size-adjust: 50px;
+    float:left;
+}
+.bar a:hover{
+    background-color: darkred;
+}
+.gmail{
+    background-image: url("gmail.png");
+    background-position: center;
+    background-size: contain;
+    height: 64px;
+    width: 64px;
+}
+.github{
+    background-image: url("github.png");
+    background-position: center;
+    background-size: contain;
+    height: 64px;
+    width: 64px;
+}
+.lichess{
+    background-image: url("lichess.png");
+    background-position: center;
+    background-size: contain;
+    height: 64px;
+    width: 64px;
+}
+.discord{
+    background-image: url("discord.png");
+    background-position: center;
+    background-size: contain;
+    height: 64px;
+    width: 64px;
+}
+
+.nav a.active{
+    background-color: darkgoldenrod;
+    color: #000000;
+}
+.nav input[type=text]{
+    float: right;
+    padding: 6px;
+    border:none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+p, li, ul, footer, h2{
+    color: #055203;
+    font-family: monospace;
+    font-size: large;
+}
+h1{
+    text-align: center;
+    font-family: monospace;
+    color: #055203;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <source src="index.js"></source>
+    <nav class="nav">
+        <a href="main.html" class="bar">Introduction &nbsp;</a>
+        <a href="blog.html" class="bar">Blogs &nbsp;</a>
+        <a href="github.html" class="bar">Github &nbsp;</a>
+    </nav>
+    <h1>Github</h1>
+    <div>
+        <p>Most recent github repository :</p>
+        <a href="https://github.com/Rayan-H7/Project-Z/tree/main/Project_Z" target="_blank">Project-Z</a>
+        <code>
+            <!DOCTYPE html>
+            <head>
+                <link ref="stylesheet" href="style.css">
+                <script source="index.js"></script>
+                <title>Project Z</title>
+            </head>
+            <body>
+                <h1>Project Z</h1>
+                <p>Project Z is a series of projects chosen at random to inspire those looking for inspiration.</p>
+
+                <div class="slidecontainer">
+                    <p>Here is the scale of how scared you are right now:</p>
+                    <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">
+                    <p onclick="slider.oninput()"></p>
+                    <p>Here is the scale of how sad you are right now:</p>
+                    <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">
+                    <p onclick="slider.oninput()"></p>
+                </div>
+                <div class="TimerSettings">
+                    <p>How many days do you want it to be? </p>
+                    <input type="password" placeholder="My secret is">
+                    <p>How many hours do you want it to be? </p>
+                    <input type="password" placeholder="My secret is">
+                    <p>How many minutes do you want it to be? </p>
+                    <input type="password" placeholder="My secret is">
+                    <p>How many seconds do you want it to be? </p>
+                    <input type="password" placeholder="My secret is">
+                </div>
+                <p id="demo"></p>
+                <script>
+                        var countdownDate = new Date("October 5, 2022 9:36:57").getTime();
+                    var x = setInterval(function(){
+                        var now = new Date().getTime();
+                        var distance = countdownDate - now;
+                        var days = Math.floor(distance/ (1000*60*60*24));
+                        var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+                        var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        document.getElementById("demo").innerHTML = days+"d "+hours+"h "+minutes+"m "+seconds+"s";
+
+                        if (distance <= 0){
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "Expired";
+                        }
+                    } , 1000);
+                </script>
+            </body>
+        </code>
+    </div>
+    <div>
+        <h2>Personal notes</h2>
+        <p>This current project is a prototype for this exact website, so soem examples might be similiar.</p>
+    </div>
+</body>
+</html>
